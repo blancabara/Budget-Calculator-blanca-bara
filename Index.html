@@ -182,16 +182,79 @@
         
         <section class="complete">
             <h1>Please Complete the Following</h1>
-            <!-- think about how will the user be able to input their options (career choice and Gross Anual Income) -->
+            <section class="complete-content">
+                <p>1. What is you career option?</p>
+                <input type="search" placeholder="Accountant">
+                <p>2. What is your Gross Annual Income</p>
+                <input type="number" placeholder="$55,650.00">
+                <!-- think about how will the user be able to input their options (career choice and Gross Anual Income) -->
+                <p>Your Gross Montly Income:</p>
+                <input type="number" placeholder="$4,637.5">
+                <!-- think about if you want to user to manualy input GMI or have JS math it out -->
+                <!-- could possibly change this to something non-editable; just for the user to see (if JS is going to do the math)-->
+            </section>
         </section>
 
         <section class="deductions">
             <h1>Pay Period Deductions</h1>
-
+            <section class="dd-content-one">
+                <p>Federal Taxes</p>
+                <p>State Taxes</p>
+                <p>Social Security</p>
+                <p>Medicare</p>
+            </section>
+            <section class="dd-content-two">
+                <p>12% =</p>
+                <p>7% =</p>
+                <p>6.2% =</p>
+                <p>1.45% =</p>
+            </section>
+            <div>
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <!-- could possibly change this to something non-editable; just for the user to see (if JS is going to do the math)-->
+            </div>
+            <section class="dd-content-three">
+                <p>State Disability</p>
+                <p>Retirement Investment</p>
+                <p>Medical Insurance</p>
+                <p>Total Deductions</p>
+            </section>
+            <section class="dd-content-four">
+                <p>1% =</p>
+                <p>5% =</p>
+                <p>$180.00 =</p>
+                <p>=</p>
+            </section>
+            <div>
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <input type="number" placeholder="0">
+                <!-- could possibly change this to something non-editable; just for the user to see (if JS is going to do the math)-->
+            </div>
+            <hr>
+            <h2>Calculate How Much of a House payment You Can Afford</h2>
+            <section class="house-payment">
+                <input type="number" placeholder="0">
+                <p>(X) 0.33 =</p>
+                <input type="number" placeholder="0">
+            </section>
+            <section>
+                <p>(Net Monthly Income)</p>
+                <p>(Max. Monthly House Payment)</p>
+            </section>
         </section>
     </main>
     <footer>
+        <nav>
+            <button><a href="Index.html">Home</a></button>
+            <button><a href="Checkbook.html">Checkbook</a></button>
+        </nav>
         <p>© 2023</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
