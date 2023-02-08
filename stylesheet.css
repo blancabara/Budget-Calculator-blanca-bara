@@ -1,0 +1,17 @@
+#career-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#career-list li{
+    width: 43%;
+}
+
+#career-list span.salary {
+    float: right;
+}
+
+li.selected, li:hover {
+    background-color: aliceblue;
+}
