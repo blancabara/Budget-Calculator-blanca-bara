@@ -1,11 +1,103 @@
+* {
+    font-family: timonium, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    padding: 0%;
+}
+
+header {
+    background-color: #0A5BA8;
+}
+
+nav {
+    background-color: #0A5BA8;
+    display: flex; 
+    justify-content: right;
+}
+
+nav button {
+    background-color: #0A5BA8;
+    text-decoration: underline;
+    border: 1.5px solid #0A5BA8;
+    margin: 1%;
+    font-size: 1.2rem;
+    padding: 0.5%;
+}
+
+nav button:hover {
+    background-color: #023E73;
+    transition: 0.3s;
+}
+
+nav button a {
+    color: whitesmoke;
+}
+
+
+.logo img{
+    width: 70%;
+    margin: 10%;
+}
+
+.logo {
+    max-width: 20%;
+}
+
+.hero {
+    background-image: url(image/pexels-expect-best-351264.jpg);
+    width: 100%;
+    height: 40vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.career {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #E8F3FC;
+    padding: 1%;
+}
+
+.career h2 {
+    font-weight: 600;
+    font-size: 2.0rem;
+}
+
+.career ul {
+    list-style: none;
+    line-height: 30px;
+}
+
+.complete {
+    display: flex;
+    justify-content: center;
+    background-color: #E8F3FC;
+    padding: 1%;
+    margin-top: 3%;
+}
+
+.complete h1 {
+    font-weight: 600;
+    font-size: 2.0rem;
+    height: 20px;
+}
+
 #career-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #career-list li{
-    width: 43%;
+    width: 35%;
 }
 
 #career-list span.salary {
@@ -13,5 +105,5 @@
 }
 
 li.selected, li:hover {
-    background-color: aliceblue;
+    background-color: #cdcdcd;
 }

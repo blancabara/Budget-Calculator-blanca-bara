@@ -1,5 +1,3 @@
-// This is a modified version of the original EECU-data.js to support ECMAScript6 modules and imports.
-// Original data was cleaned for grammar and spelling mistakes.
 
 const data = [
     ['Accountant', 55650],
@@ -75,6 +73,17 @@ const data = [
 ]
 
 const careerList = document.getElementById('career-list');
+const fedtax =  document.getElementById('ft');
+const statetax = document.getElementById('st');
+const socSec = document.getElementById('ss');
+const medi = document.getElementById('md');
+const stateDis = document.getElementById('sd');
+const reti = document.getElementById('ri');
+const medInsur = document.getElementById('mi');
+const co = document.getElementById('co');
+const income = document.getElementById('income');
+const gmi = document.getElementById('gmi');
+const housePay = document.getElementById('hp');
 
 
 for(job of data){
@@ -83,4 +92,29 @@ for(job of data){
     element.addEventListener('click', (e) => selectjob(e.target))
     element.setAttribute('salary', job[1]);
     careerList.appendChild(element);
+}
+
+function monthlyIncome(salary) {
+    gmi.innerText = salary / 12
+}
+
+function selectjob(element){
+element.classList.toggle('selected')
+calculate(element.getAttribute('salary'))
+monthlyIncome(element.getAttribute('salary'))
+housePayment(element.getAttribute('salary'))
+}
+
+function calculate(salary){
+    fedtax.innerText= salary * 0.12
+    statetax.innerText = salary * 0.07
+    socSec.innerText = salary * 0.062 
+    medi.innerText = salary * 0.0145
+    stateDis.innerText = salary * 0.01 
+    reti.innerText = salary * 0.05 
+    medInsur.innerText = salary += 180
+    }
+    
+function housePayment(salary){
+    housePay.innerText = salary * 0.33
 }
